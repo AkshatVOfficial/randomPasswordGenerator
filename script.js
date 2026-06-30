@@ -68,7 +68,7 @@ btn3.addEventListener("click", (e) => {
 });
 btn4.addEventListener("click", (e) => {
   isSymbol = !isSymbol;
-  if (isNumber) {
+  if (isSymbol) {
     e.target.style.backgroundColor = "rgb(7, 159, 7)";
   } else {
     e.target.style.backgroundColor = "red";
