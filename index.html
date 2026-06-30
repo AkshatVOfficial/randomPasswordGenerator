@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="image/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="ezPassword" />
+    <link rel="manifest" href="image/site.webmanifest" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <form>
+          <label for="">Random Password Generator</label>
+          <input id="Password" placeholder="Create Password" disabled />
+          <div><button>Generate</button></div>
+        </form>
+      </div>
+      <div class="chars">
+        <div>
+          <button id="lower-case">LowerCase</button>
+          <button id="upper-case">UpperCase</button>
+        </div>
+        <div>
+          <button id="number">Number</button>
+          <button id="symbol">Symbol</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

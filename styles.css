@@ -1,0 +1,98 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  border: 2px solid;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 0.7rem;
+  font-size: 2rem;
+}
+form label {
+  font-family: sans-serif;
+}
+form button {
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  transition: 0.3s;
+  color: azure;
+  background-color: rgb(42, 97, 206);
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgb(48, 117, 255);
+  color: azure;
+}
+form button:active {
+  background-color: rgb(156, 194, 255);
+}
+form input {
+  display: flex;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+}
+
+.chars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.chars div {
+  display: flex;
+  gap: 2rem;
+}
+.chars button {
+  cursor: pointer;
+  background-color: rgb(7, 159, 7);
+  color: azure;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.299),
+    0 2px 4px -1px rgba(0, 0, 0, 0.178);
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 575px) {
+  section {
+    margin: 2rem;
+  }
+  form {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  button {
+    padding: 2rem;
+  }
+  .chars {
+    gap: 1rem;
+  }
+  .chars button {
+    padding: 0.7rem;
+  }
+  .chars div {
+    display: flex;
+    gap: 1rem;
+  }
+  form input {
+    font-size: 0.7em;
+  }
+}
